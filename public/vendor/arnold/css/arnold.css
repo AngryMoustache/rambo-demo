@@ -1,0 +1,212 @@
+@import url(https://fonts.googleapis.com/css2?family=Varela+Round&family=Poppins&display=swap);:root {
+  --toolbar-width: 450px;
+}
+
+.arnold {
+  flex-wrap: wrap;
+  position: fixed;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #f0f0f0;
+}
+
+.arnold-content {
+  width: calc(100% - var(--toolbar-width));
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.arnold-content-overlay {
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fafafa;
+  z-index: 10000;
+}
+
+.arnold-content-page {
+  margin: 2rem auto;
+  width: 1000px;
+  padding: 1rem;
+  background: #fafafa;
+  border: 1px solid #d2d2d2;
+}
+
+.arnold-content-page-add-button a {
+  display: block;
+  width: 60%;
+  margin: 0 20%;
+  padding: 1rem;
+  border: 1px solid #d2d2d2;
+  border-radius: 0.2rem;
+  border-style: dashed;
+  text-align: center;
+  font-family: "Varela Round", Arial, sans-serif;
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.arnold-content-page-add-button a i {
+  margin-left: 0.5rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.arnold-content-page-add-button a:hover {
+  color: #667eea;
+}
+
+.arnold-content-page-add-button a:hover i {
+  color: #667eea;
+}
+
+.arnold-content-page-row {
+  position: relative;
+  border: 1px solid #d2d2d2;
+  border-radius: 0.2rem;
+  margin: 1rem 0;
+}
+
+.arnold-content-page-row-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-bottom: 1px solid #d2d2d2;
+  background: #f0f0f0;
+}
+
+.arnold-content-page-row-name h1 {
+  padding-left: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.arnold-content-page-row-name-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.arnold-content-page-row-name-actions a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: #667eea;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+
+.arnold-content-page-row-name-actions a:hover {
+  background: #4b64d1;
+}
+
+.arnold-content-page-row-name-actions a i {
+  color: #fafafa;
+}
+
+.arnold-content-page-row-columns {
+  display: flex;
+}
+
+.arnold-content-page-row-columns-column {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border: 1px solid #d2d2d2;
+}
+
+.arnold-content-page-row-actions {
+  transition: opacity 0.2s;
+}
+
+.arnold-content-page-row .container {
+  width: 100%;
+}
+
+.arnold-content-page-row:hover .pa-content-page-block-actions {
+  opacity: 1;
+}
+
+.arnold-tools {
+  display: flex;
+  flex-wrap: wrap;
+  width: var(--toolbar-width);
+  height: 100vh;
+  background: #fafafa;
+  border-left: 1px solid #d2d2d2;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.arnold-tools-blocklist {
+  width: 100%;
+}
+
+.arnold-tools-blocklist h2 {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #d2d2d2;
+  font-size: 1.5rem;
+  background: #f0f0f0;
+}
+
+.arnold-tools-blocklist ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.arnold-tools-blocklist ul li:last-of-type {
+  border-bottom: 0;
+}
+
+.arnold-tools-blocklist ul li span {
+  padding-left: 0.5rem;
+}
+
+.arnold-tools-blocklist ul li span i {
+  padding-right: 0.5rem;
+  opacity: 0.5;
+}
+
+.arnold-tools-blocklist ul li .pa-tools-blocklist-actions a {
+  display: inline-block;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.arnold-tools-blocklist ul li .pa-tools-blocklist-actions a i {
+  opacity: 0.5;
+}
+
+.arnold-tools-blocklist ul li .pa-tools-blocklist-actions a:hover i {
+  opacity: 1;
+  color: #667eea;
+}
+
+.arnold-tools-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: auto;
+  padding: 1rem 0 1rem 1rem;
+  border-top: 1px solid #d2d2d2;
+}
+
+@media (max-width: 1450px) {
+  .pa-content-page {
+    width: 100%;
+  }
+}
+
